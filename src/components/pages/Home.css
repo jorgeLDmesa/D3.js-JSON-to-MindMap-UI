@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
+}
+
+.sheet-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.sheet {
+    background-color: #fff;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transform: translateY(20px);
+}
+
+.long-sheet {
+    height: 700px;
+    width: 500px;
+}
+
+.wide-sheet {
+    height: 700px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Eliminar las pseudoelementos ::before */
+.sheet::before {
+    content: none;
+}

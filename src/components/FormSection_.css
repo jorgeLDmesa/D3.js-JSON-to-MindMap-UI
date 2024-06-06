@@ -1,0 +1,83 @@
+body {
+  font-family: 'Barlow', sans-serif;
+}
+
+.form-section {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.example-text {
+  font-size: 16px;
+  color: #aaa;
+  line-height: 1.6;
+  pointer-events: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+}
+
+.overlay-textarea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 60px); /* Adjusted to allow space for the button */
+  border: none;
+  background: none;
+  color: #333;
+  font-size: 16px;
+  font-family: 'Barlow', sans-serif;
+  resize: none;
+  outline: none;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.overlay-textarea::placeholder {
+  color: transparent;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2; /* Ensure the button is above other elements */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #74ABC8;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Barlow', sans-serif;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #6297b4;
+}
+
+.response-container {
+  margin-top: 20px;
+}
+
+.response {
+  font-size: 14px;
+  color: #333;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
